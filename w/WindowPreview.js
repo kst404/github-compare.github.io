@@ -17,12 +17,12 @@ const styles = {
 }
 
 export default class WindowPreview extends Component {
-  fullFrame = {width: 0, height: 0}
+  fullFrame = { width: 0, height: 0 }
 
   render() {
     this.fullFrame = this.props.data.reduce((result, { width, height }) => ({ width: result.width + width, height: height > result.height ? height : result.height }), {width: 0, height: 0})
 
-    const {frames} = this.props.data.reduce((result, item) => ({ frames: result.frames.concat({thikness: 5, ...item, x: result.x, y: result.y }), x: result.x + item.width, y: result.y }), { x: 0, y: 0, frames: [] })
+    const { frames } = this.props.data.reduce((result, item) => ({ frames: result.frames.concat({thikness: 5, ...item, x: result.x, y: result.y }), x: result.x + item.width, y: result.y }), { x: 0, y: 0, frames: [] })
 
     return <svg xmlns="http://www.w3.org/2000/svg" viewBox={`-1 -1 ${this.fullFrame.width+2} ${this.fullFrame.height+2}`}>
       <g style={styles.main}>{frames.map((item, i) => <Frame key={i} {...item} />)}</g>
