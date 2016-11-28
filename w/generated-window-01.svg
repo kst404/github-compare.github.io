@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="-1 -1 212 162" style="width: 60%; height: auto; margin: 30px 20%;">
+    <defs>
+        <linearGradient id="windowPreviewGlassFill" x1="0" y1="0" x2="0.5" y2="1">
+            <stop offset="7%" stop-color="#99f" stop-opacity="0.2"></stop>
+            <stop offset="14%" stop-color="#fff" stop-opacity="0.4"></stop>
+            <stop offset="22%" stop-color="#fff" stop-opacity="0.4"></stop>
+            <stop offset="61%" stop-color="#99f" stop-opacity="0.2"></stop>
+            <stop offset="70%" stop-color="#99f" stop-opacity="0.2"></stop>
+            <stop offset="82%" stop-color="#fff" stop-opacity="0.4"></stop>
+            <stop offset="92%" stop-color="#fff" stop-opacity="0.4"></stop>
+            <stop offset="100%" stop-color="#99f" stop-opacity="0.2"></stop>
+        </linearGradient>
+        <linearGradient id="windowPreviewRollingShatterGradient" x1="0" y1="0" x2="0" y2="1">
+            <stop offset="0%" stop-color="#aaa" stop-opacity="1"></stop>
+            <stop offset="10%" stop-color="#c0c0c0" stop-opacity="1"></stop>
+            <stop offset="70%" stop-color="#f0f0f0" stop-opacity="1"></stop>
+            <stop offset="85%" stop-color="#fff" stop-opacity="1"></stop>
+            <stop offset="92%" stop-color="#fff" stop-opacity="1"></stop>
+            <stop offset="98%" stop-color="#bbb" stop-opacity="1"></stop>
+            <stop offset="100%" stop-color="#555" stop-opacity="1"></stop>
+        </linearGradient>
+        <pattern id="windowPreviewRollingShatterFill" x="0" y="0" width="10" height="5" patternUnits="userSpaceOnUse">
+            <rect x="0" y="0" width="10" height="5" fill="url(#windowPreviewRollingShatterGradient)"></rect>
+        </pattern>
+    </defs>
+    <g style="stroke: rgb(153, 153, 153); stroke-width: 1; fill: rgb(255, 255, 255);">
+        <g style="stroke: rgb(153, 153, 153); stroke-width: 1; fill: rgb(255, 255, 255);">
+            <path d="M0,0h210v160h-210z M5,5v150h200v-150z"></path>
+            <g style="stroke: rgb(153, 153, 153); stroke-width: 1; fill: rgb(255, 255, 255);">
+                <path d="M5,5h65v150h-65z M10,10v140h55v-140z"></path>
+                <path d="M10,10h55v140h-55z" style="stroke: none; fill: url(&quot;#windowPreviewGlassFill&quot;);"></path>
+            </g>
+            <g style="stroke: rgb(153, 153, 153); stroke-width: 1; fill: rgb(255, 255, 255);">
+                <path d="M70,5h70v150h-70z M75,10v140h60v-140z"></path>
+                <path d="M72,84.5h1v15h-1z"></path>
+                <path d="M75,10h60v140h-60z" style="stroke: none; fill: url(&quot;#windowPreviewGlassFill&quot;);"></path>
+            </g>
+            <g style="stroke: rgb(153, 153, 153); stroke-width: 1; fill: rgb(255, 255, 255);">
+                <path d="M140,5h65v150h-65z M145,10v140h55v-140z"></path>
+                <path d="M142,84.5h1v15h-1z"></path>
+                <g>
+                    <path d="M145,10h55v140h-55z" style="stroke: none; fill: url(&quot;#windowPreviewRollingShatterFill&quot;);"></path>
+                    <path d="M145,10h55v140h-55z" style="stroke: none; fill: url(&quot;#windowPreviewGlassFill&quot;);"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>
